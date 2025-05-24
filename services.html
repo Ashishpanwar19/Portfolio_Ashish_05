@@ -40,7 +40,6 @@
             padding: 0 20px;
         }
 
-        /* Header Section */
         header {
             display: flex;
             flex-direction: column;
@@ -92,25 +91,6 @@
             display: inline-block;
         }
 
-        .profile h1::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--primary-color);
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.5s ease;
-        }
-
-        .profile:hover h1::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-
-        /* Navigation */
         nav {
             width: 100%;
             margin-top: 1rem;
@@ -159,7 +139,6 @@
             width: 80%;
         }
 
-        /* Video Section */
         .video-section {
             padding: 3rem 0;
             opacity: 0;
@@ -173,9 +152,6 @@
             margin-bottom: 2rem;
             color: var(--dark-color);
             position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         .video-section h2::after {
@@ -278,7 +254,6 @@
             background: var(--secondary-color);
         }
 
-        /* Floating elements */
         .floating-elements {
             position: absolute;
             width: 100%;
@@ -320,7 +295,6 @@
             animation-delay: 4s;
         }
 
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -344,7 +318,6 @@
             }
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .profile h1 {
                 font-size: 2rem;
@@ -379,26 +352,24 @@
 
 <body>
     <div class="container">
-        <!-- Floating background elements -->
         <div class="floating-elements">
             <div class="floating-element"></div>
             <div class="floating-element"></div>
             <div class="floating-element"></div>
         </div>
 
-        <!-- Header Section -->
         <header>
             <div class="profile">
-                <img src="image/ashish1.jpg" alt="Ashish Panwar" class="animate__animated animate__fadeIn">
+                <img src="../image/ashish1.jpg" alt="Ashish Panwar" class="animate__animated animate__fadeIn">
                 <h1>Videos</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Videos</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="videos.html" class="active">Videos</a></li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../portfolio.html">Portfolio</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -407,7 +378,7 @@
             <h2>Featured Videos</h2>
             <ul>
                 <li>
-                    <a href="assert/vedious/ashish1.mp4" target="_blank">
+                    <a href="../assert2/ashish1.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>6 Ring Theory Introduction</h3>
@@ -418,7 +389,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/ashish2.mp4" target="_blank">
+                    <a href="../assert3/ashish2.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>5 Ring Theory Introduction</h3>
@@ -429,10 +400,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/final_vedio.mp4" target="_blank">
+                    <a href="../assert/final_vedio.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
-                            <h3>final_vedio</h3>
+                            <h3>Final Video</h3>
                             <span class="btn">
                                 <i class="fas fa-play"></i> Watch Now
                             </span>
@@ -440,7 +411,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/lecture_1.mp4" target="_blank">
+                    <a href="../static/vedious/lecture_1.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>Key Learnings 1</h3>
@@ -451,7 +422,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/lecture_3.mp4" target="_blank">
+                    <a href="../static/vedious/lecture_3.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>Key Learnings 3</h3>
@@ -462,7 +433,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/lecture_4.mp4" target="_blank">
+                    <a href="../static/vedious/lecture_4.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>Key Learnings 4</h3>
@@ -473,7 +444,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/lecture_5.mp4" target="_blank">
+                    <a href="../static/vedious/lecture_5.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>Key Learnings 5</h3>
@@ -484,7 +455,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="assert/vedious/lecture_6.mp4" target="_blank">
+                    <a href="../static/vedious/lecture_6.mp4" target="_blank">
                         <div class="video-thumbnail"></div>
                         <div class="video-info">
                             <h3>Key Learnings 6</h3>
@@ -494,7 +465,6 @@
                         </div>
                     </a>
                 </li>
-                <li>
             </ul>
         </section>
     </div>
@@ -502,7 +472,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Smooth scrolling for navigation links
             $('nav a').on('click', function(e) {
                 if (this.hash !== '') {
                     e.preventDefault();
@@ -513,7 +482,6 @@
                 }
             });
 
-            // Add animation class when element is in viewport
             function animateOnScroll() {
                 $('.video-section').each(function() {
                     const elementPosition = $(this).offset().top;
@@ -526,11 +494,9 @@
                 });
             }
 
-            // Run on load and scroll
             animateOnScroll();
             $(window).on('scroll', animateOnScroll);
         });
     </script>
 </body>
-
 </html>
