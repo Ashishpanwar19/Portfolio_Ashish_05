@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Ashish Panwar</title>
+  <link rel="icon" href="image/ashish1.jpg" type="image/jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -267,6 +268,7 @@
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: var(--transition);
+      height: 300px;
     }
 
     .project-item:hover {
@@ -276,7 +278,7 @@
 
     .project-item img {
       width: 100%;
-      height: 200px;
+      height: 100%;
       object-fit: cover;
       display: block;
     }
@@ -428,6 +430,10 @@
       .latest-projects h2 {
         font-size: 1.5rem;
       }
+      
+      .project-item {
+        height: 250px;
+      }
     }
   </style>
 </head>
@@ -452,7 +458,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Videos</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <li><a href="Projects.html" class="active">Projects</a></li>
+          <li><a href="portfolio.html" class="active">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -522,18 +528,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      // Smooth scrolling for navigation links
-      $('nav a').on('click', function(e) {
-        if (this.hash !== '') {
-          e.preventDefault();
-          const hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top - 100
-          }, 800);
-        }
-      });
-
-      // Filter Projects
+      // Filter Projects with better animation
       $('.filter-btn').on('click', function() {
         // Remove active class from all buttons
         $('.filter-btn').removeClass('active');
@@ -543,13 +538,15 @@
         // Get the filter category
         const filter = $(this).data('filter');
 
-        // Filter projects
+        // Filter projects with better animation
         $('.project-item').each(function() {
           const category = $(this).data('category');
           if (filter === 'all' || category === filter) {
-            $(this).fadeIn(300); // Show the project
+            $(this).css('display', 'none').fadeIn(400);
           } else {
-            $(this).fadeOut(300); // Hide the project
+            $(this).fadeOut(200, function() {
+              $(this).css('display', 'none');
+            });
           }
         });
       });
