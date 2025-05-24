@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills - Ashish Panwar</title>
+  <link rel="icon" href="image/ashish1.jpg" type="image/jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -247,6 +248,8 @@
     .circle-progress {
       margin: 0 auto;
       position: relative;
+      width: 120px;
+      height: 120px;
     }
 
     .circle-progress strong {
@@ -372,6 +375,10 @@
         align-items: center;
       }
 
+      .skills-container {
+        flex-direction: column;
+      }
+
       .skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       }
@@ -389,6 +396,11 @@
 
       .skills-section h2 {
         font-size: 1.5rem;
+      }
+
+      .circle-progress {
+        width: 100px;
+        height: 100px;
       }
     }
   </style>
@@ -414,7 +426,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Videos</a></li>
           <li><a href="skills.html" class="active">Skills</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -429,55 +441,55 @@
               <h3>Technical Skills</h3>
               <div class="skills-grid">
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.95" data-text="95%"></div>
+                      <div class="circle-progress" data-value="0.95" data-text="95"></div>
                       <p>HTML</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.85" data-text="85%"></div>
+                      <div class="circle-progress" data-value="0.85" data-text="85"></div>
                       <p>Machine Learning</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.90" data-text="90%"></div>
+                      <div class="circle-progress" data-value="0.90" data-text="90"></div>
                       <p>C++</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.88" data-text="88%"></div>
+                      <div class="circle-progress" data-value="0.88" data-text="88"></div>
                       <p>CSS</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.92" data-text="92%"></div>
+                      <div class="circle-progress" data-value="0.92" data-text="92"></div>
                       <p>Python</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.80" data-text="80%"></div>
+                      <div class="circle-progress" data-value="0.80" data-text="80"></div>
                       <p>JavaScript</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.75" data-text="75%"></div>
+                      <div class="circle-progress" data-value="0.75" data-text="75"></div>
                       <p>Java</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.82" data-text="82%"></div>
+                      <div class="circle-progress" data-value="0.82" data-text="82"></div>
                       <p>Flask</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.78" data-text="78%"></div>
+                      <div class="circle-progress" data-value="0.78" data-text="78"></div>
                       <p>Agentic AI (n8n)</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.85" data-text="85%"></div>
+                      <div class="circle-progress" data-value="0.85" data-text="85"></div>
                       <p>Bolt AI</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.90" data-text="90%"></div>
+                      <div class="circle-progress" data-value="0.90" data-text="90"></div>
                       <p>Prompt Engineering</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.83" data-text="83%"></div>
+                      <div class="circle-progress" data-value="0.83" data-text="83"></div>
                       <p>Power BI</p>
                   </div>
                   <div class="skill-item">
-                      <div class="circle-progress" data-value="0.80" data-text="80%"></div>
+                      <div class="circle-progress" data-value="0.80" data-text="80"></div>
                       <p>Tableau</p>
                   </div>
               </div>
@@ -492,8 +504,8 @@
                           <span>Team Work</span>
                           <span>95%</span>
                       </div>
-                      <div class="progress-line teamwork">
-                          <span></span>
+                      <div class="progress-line">
+                          <span data-width="95%"></span>
                       </div>
                   </div>
                   <div class="bar">
@@ -501,8 +513,8 @@
                           <span>Creativity</span>
                           <span>90%</span>
                       </div>
-                      <div class="progress-line creativity">
-                          <span></span>
+                      <div class="progress-line">
+                          <span data-width="90%"></span>
                       </div>
                   </div>
                   <div class="bar">
@@ -510,8 +522,8 @@
                           <span>Project Management</span>
                           <span>85%</span>
                       </div>
-                      <div class="progress-line management">
-                          <span></span>
+                      <div class="progress-line">
+                          <span data-width="85%"></span>
                       </div>
                   </div>
                   <div class="bar">
@@ -519,8 +531,8 @@
                           <span>Communication</span>
                           <span>92%</span>
                       </div>
-                      <div class="progress-line communication">
-                          <span></span>
+                      <div class="progress-line">
+                          <span data-width="92%"></span>
                       </div>
                   </div>
                   <div class="bar">
@@ -528,8 +540,8 @@
                           <span>Problem Solving</span>
                           <span>88%</span>
                       </div>
-                      <div class="progress-line problem-solving">
-                          <span></span>
+                      <div class="progress-line">
+                          <span data-width="88%"></span>
                       </div>
                   </div>
               </div>
@@ -542,51 +554,30 @@
   $(document).ready(function() {
       // Circle progress bars for technical skills
       $('.circle-progress').each(function() {
-          var value = $(this).data('value');
+          var value = parseFloat($(this).data('value'));
           var text = $(this).data('text');
+          var $this = $(this);
           
-          $(this).circleProgress({
+          $this.circleProgress({
               value: value,
               size: 120,
               fill: {
-                  gradient: [var(--primary-color), var(--accent-color)]
+                  gradient: ["#2563eb", "#3b82f6"]
               },
-              emptyFill: "#f5f5f5",
+              emptyFill: "#f0f0f0",
               thickness: 10,
               startAngle: -Math.PI/2,
               animation: { duration: 1500 }
           }).on('circle-animation-progress', function(event, progress) {
-              $(this).find('strong').html(parseInt(text * progress) + '<i>%</i>');
+              $(this).find('strong').text(Math.round(value * 100 * progress) + '%');
           });
           
-          $(this).append('<strong>'+text+'</strong>');
+          $this.append('<strong>0%</strong>');
       });
 
       // Animate professional skill bars
       $('.progress-line span').each(function() {
-          var skillClass = $(this).parent().attr('class').split(' ')[1];
-          var width;
-          
-          switch(skillClass) {
-              case 'teamwork':
-                  width = '95%';
-                  break;
-              case 'creativity':
-                  width = '90%';
-                  break;
-              case 'management':
-                  width = '85%';
-                  break;
-              case 'communication':
-                  width = '92%';
-                  break;
-              case 'problem-solving':
-                  width = '88%';
-                  break;
-              default:
-                  width = '80%';
-          }
-          
+          var width = $(this).data('width');
           $(this).animate({
               'width': width
           }, 1500);
@@ -602,6 +593,23 @@
           }, 800);
         }
       });
+
+      // Add animation class when element is in viewport
+      function animateOnScroll() {
+        $('.skills-section').each(function() {
+          const elementPosition = $(this).offset().top;
+          const windowHeight = $(window).height();
+          const windowPosition = $(window).scrollTop();
+          
+          if (elementPosition < windowPosition + windowHeight - 100) {
+            $(this).addClass('animate__animated animate__fadeInUp');
+          }
+        });
+      }
+
+      // Run on load and scroll
+      animateOnScroll();
+      $(window).on('scroll', animateOnScroll);
   });
   </script>
 </body>
